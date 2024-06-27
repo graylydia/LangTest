@@ -1,6 +1,9 @@
 # Install necessary packages
 import os
 from langtest import Harness
+from huggingface_hub import login
+
+login(token="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")
 
 # Set environment for HF hub
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
