@@ -6,7 +6,7 @@ from huggingface_hub import login
 login(token="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")
 
 # Set environment for HF hub
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 # Configure Harness
 # harness = Harness(
