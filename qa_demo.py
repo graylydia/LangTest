@@ -2,7 +2,7 @@
 from langtest import Harness
 
 import os
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "<API_TOKEN>"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 harness = Harness(
                   task="question-answering", 
