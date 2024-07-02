@@ -3,10 +3,10 @@ import os
 from langtest import Harness
 from huggingface_hub import login
 
-login(token="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")
+login(token="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")
 
 # Set environment for HF hub
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 # Configure Harness
 # harness = Harness(
