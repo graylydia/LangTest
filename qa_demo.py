@@ -43,7 +43,7 @@
 import os
 
 # Set your OpenAI API key
-os.environ["OPENAI_API_KEY"] = "sk-proj-LL7y91gASYgpl9icnJT7T3BlbkFJwu8bnd4J3dMN5KprJfWQ"
+os.environ["OPENAI_API_KEY"] = ""
 
 #Import Harness from the LangTest library
 from langtest import Harness
