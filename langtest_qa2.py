@@ -11,7 +11,7 @@ os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 # Configure Harness
 harness = Harness(
     task="question-answering",
-    model={"model": "mistralai/Mixtral-8x7B-v0.1", "hub": "huggingface"},
+    model={"model": "meta-llama/Meta-Llama-3-8B", "hub": "huggingface"},
     data={"data_source": "Open-Orca/OpenOrca", "source": "huggingface", "split": "train"}
 )
 
