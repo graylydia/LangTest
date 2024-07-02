@@ -36,22 +36,24 @@ harness.configure(
         "evaluation": {"metric":"embedding_distance","distance":"cosine","threshold":0.9},
         "embeddings":{"model":"sentence-transformers/all-mpnet-base-v2","hub":"huggingface"},
         'tests':{'defaults': {'min_pass_rate':0.66},
-                 'dyslexia_word_swap':{'min_pass_rate':0.60}
+                 'robustness':{
+                     'lowercase':{'min_pass_rate':0.60}
+                 }
                 }
     }
 )
 
 # Generate test cases
-harness.generate()
+harness.generate().run().generated_results()
 
-# Display test cases
-harness.testcases()
+# # Display test cases
+# harness.testcases()
 
-# Run the tests outlined in harness configuration
-harness.run()
+# # Run the tests outlined in harness configuration
+# harness.run()
 
-# Generate results
-harness.generated_results
+# # Generate results
+# harness.generated_results
 
-# Summary of results
-harness.report()
+# # Summary of results
+# harness.report()
